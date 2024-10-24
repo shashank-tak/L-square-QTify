@@ -1,0 +1,21 @@
+:root {
+    --button-bg-color: #121212;
+    --button-text-color: #34c94b;
+  }
+  
+  .customButton {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .customButton:hover {
+    cursor: pointer;
+    background-color: var(--button-bg-hover); /* You can add a hover background color if needed */
+  }
+  

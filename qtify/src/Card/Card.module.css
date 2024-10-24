@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .card-chip {
+    margin-top: 10px;
+  }
+  
