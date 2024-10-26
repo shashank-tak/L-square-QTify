@@ -1,0 +1,9 @@
+.gridsection {
+    padding: 3%;
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

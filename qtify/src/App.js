@@ -5,6 +5,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Hero from './Hero/Hero';
+import Section from './Section/Section';
 
 function App() {
   const [searchData, setSearchData] = useState([]);
@@ -27,6 +28,7 @@ function App() {
       <div className="App">
         <Navbar searchData={searchData}/>
         <Hero />
+        <Section title={'Top Albums'} apiRoute={'https://qtify-backend-labs.crio.do/albums/top'}/>
       </div>
     </Router>
   );
