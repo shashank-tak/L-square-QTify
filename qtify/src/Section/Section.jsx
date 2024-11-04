@@ -8,7 +8,7 @@ import Carousel from '../Carousel/Carousel';
 
 const Section = ({title, apiRoute}) => {
   const [albums, setAlbums] = useState([]);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   useEffect(() => {
     const fetchAlbums = async () => {
