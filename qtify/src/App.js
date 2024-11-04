@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Hero from './Hero/Hero';
 import Section from './Section/Section';
+import SongsSection from './SongsSection/SongsSection';
 
 function App() {
   const [searchData, setSearchData] = useState([]);
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <Section title={'Top Albums'} apiRoute={'https://qtify-backend-labs.crio.do/albums/top'}/>
         <Section title={'New Albums'} apiRoute={'https://qtify-backend-labs.crio.do/albums/new'}/>
+        <SongsSection />
       </div>
     </Router>
   );

@@ -1,0 +1,13 @@
+.songsSection {
+    padding: 20px;
+    background-color: #121212; /* Example background */
+  }
+  
+  .MuiTab-root {
+    color: #34c94b; /* Example tab color */
+  }
+  
+  .MuiTab-root.Mui-selected {
+    color: white; /* Selected tab color */
+  }
+  
