@@ -14,16 +14,14 @@ const SongsSection = () => {
     const fetchGenres = async () => {
       try {
         const response = await axios.get('https://qtify-backend-labs.crio.do/genres');
-        setGenres(['All', ...response.data]); // Include "All" genre
+        setGenres(['All', ...response.data]);
       } catch (error) {
         console.error('Error fetching genres:', error);
       }
     };
-
     fetchGenres();
   }, []);
 
-  // Fetch songs from the API
   useEffect(() => {
     const fetchSongs = async () => {
       try {
@@ -57,7 +55,8 @@ const SongsSection = () => {
       <Grid container spacing={2} style={{ marginTop: '20px' }}>
         {filteredSongs.map((song) => (
           <Grid item key={song.id} xs={12} sm={6} md={4} lg={3}>
-            <AlbumCard image={song.image} follows={song.likes} title={song.title} />
+            <AlbumCard image={song.image} follows={song.likes} />
+            <p>{song.title}</p>
           </Grid>
         ))}
       </Grid>
